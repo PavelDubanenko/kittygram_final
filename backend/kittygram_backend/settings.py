@@ -2,6 +2,12 @@
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import environ
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
