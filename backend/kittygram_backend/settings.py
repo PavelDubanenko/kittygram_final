@@ -1,17 +1,17 @@
 # flake8: noqa
 import os
 from pathlib import Path
-from dotenv import load_dotenv
-import environ
+# from dotenv import load_dotenv
+# import environ
 
-env = environ.Env(
-    # set casting, default value
-    DEBUG=(bool, False)
-)
+# env = environ.Env(
+#     # set casting, default value
+#     DEBUG=(bool, False)
+# )
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv()
+# load_dotenv()
 
 
 SECRET_KEY = os.getenv('SECRET_KEY')
